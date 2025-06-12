@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lottie Scroll Control</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+  <lottie-player id="heroLottie" src="hero/hero.json" background="transparent" speed="1" autoplay
+    style="width: 100%; height: 100%; display: block;"></lottie-player>
+  <div class="bird-plants">
+    <lottie-player id="birdLottie" src="bird/bird.json" background="transparent" speed="1" autoplay
+      style="width: 50%; height: 100%; display: block;"></lottie-player>
+    <div class="plants-birds">
+      <h1 class="birds">Plants & Birds</h1>
+      <p>Millions of years ago, when birds and plants became part of the great planetary community comprised of all
+        living beings, a strong <span>coevolutionary relationship </span>was woven and continues to this day. Behind
+        their tangle of stems, aromas, and leaves, foliage conceals diverse trills, feathered wings of different colors,
+        and nests.</p>
+    </div>
+  </div>
+  <div class="p-parts">
+    <h1 class="plant">Parts of a plant</h1>
+    <lottie-player id="plantParts" src="plant-parts/plant-parts.json" background="transparent" speed="1" autoplay
+      style="width: 70%; height: 100%; display: block;"></lottie-player>
+  </div>
+  <div class="leaf-title">
+    <lottie-player id="leafTypes" src="leaf-title/leaf-title.json" background="transparent" speed="1" autoplay
+      style="width: 90%; height: 90%; display: block;"></lottie-player>
+  </div>
+  <div>
+    <div class="buttons">
+      <button id="simple-leaf">Simple leaf</button>
+      <button id="compound-leaf">Compound leaf</button>
+    </div>
+    <div class="leaf-cards">
+      <div class="leaf-card" data-type="simple">
+        <img src="images/Leaf1.png" alt="" class="leaf-contain">
+        <div class="leaf-label">Whole</div>
+      </div>
+      <div class="leaf-card" data-type="simple">
+        <img src="images/Leaf2.png" alt="" class="leaf-contain">
+        <div class="leaf-label">Lobed</div>
+
+      </div>
+      <div class="leaf-card" data-type="compound">
+        <img src="images/Leaf3.png" alt="" class="leaf-contain">
+        <div class="leaf-label">Pinnate</div>
+      </div>
+      <div class="leaf-card" data-type="compound">
+        <img src="images/Leaf4.png" alt="" class="leaf-contain">
+        <div class="leaf-label">Bipinnate</div>
+      </div>
+      <div class="leaf-card" data-type="compound">
+        <img src="images/Leaf5.png" alt="" class="leaf-contain">
+        <div class="leaf-label">Palmed</div>
+      </div>
+      <div class="leaf-card" data-type="compound">
+        <img src="images/Leaf6.png" alt="" class="leaf-contain">
+        <div class="leaf-label">Trifoliate</div>
+      </div>
+    </div>
+  </div>
+  <div class="flower-title">
+    <img src="images/Flower_Divider2.png" alt="" class="flower-divider left">
+    <h1 class="plant">Parts of a Flower</h1>
+    <img src="images/Flower_Divider 3.png" alt="" class="flower-divider right">
+  </div>
+  <div class="flower-parts">
+    <lottie-player id="flowerParts" src="flower-parts/flower-parts.json" background="transparent" speed="1" autoplay
+      style="width: 100%; height: 100%; display: block;"></lottie-player>
+  </div>
+  <div class="species">
+    <h1 class="plant">Species that attract birds</h1>
+  </div>
+  <div class="plant-box">
+    <div class="img-box">
+      <img src="images/TecomaStans.png" alt="">
+    </div>
+    <div class="plant-info">
+      <h1>Tecoma Stans</h1>
+      <p class="info">Tecoma stans is a fast-growing shrub or small tree native to the Neotropical region, particularly
+        widespread in Mexico, Central America, and parts of South America. It belongs to the Bignoniaceae family and is
+        known for its tubular, bright yellow flowers arranged in terminal clusters.</p>
+      <p class="info">These flowers are rich in nectar and serve as an important food source for nectarivorous birds,
+        such as orioles and tanagers. The plant thrives in dry, sunny habitats and is often used in reforestation and
+        ornamental landscaping due to its drought tolerance and ecological value.</p>
+      <div id="circles">
+        <div class="circle-group">
+          <div class="circle" style="width: 105px; height: 105px;"></div>
+          <p class="small-t">Big tree</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 90px; height: 90px;"></div>
+          <p class="small-t">Medium tree</p>
+        </div>
+        <div class="circle-group">
+          <div class="circlef" style="width: 72px; height: 72px;"></div>
+          <p class="small-t">Small Tree</p>
+        </div>
+        <div class="circle-group">
+          <div class="circlef" style="width: 56px; height: 56px;"></div>
+          <p class="small-t">Bush</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 40px; height: 40px;"></div>
+          <p class="small-t">Grass</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 24px; height: 24px;"></div>
+          <p class="small-t">Scandent</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="plant-box">
+    <div class="plant-info2">
+      <h1>Garcinia Madruno</h1>
+      <p class="info2">With its glossy green leaves and rounded yellow fruits, Garcinia madruno stands out in the lush
+        tropical forests of Central and South America. The tree produces small, golden fruits that split open to reveal
+        soft, snow-white pulp with a sweet, tangy flavor—often compared to a mangosteen. These eye-catching fruits are a
+        favorite of colorful frugivorous birds like toucans and tanagers, who help spread the seeds through the forest.
+        Thriving in humid lowlands, Garcinia madruno not only adds vibrant color to the landscape but also plays a vital
+        role in forest ecology and regeneration.</p>
+      <div id="circles">
+        <div class="circle-group">
+          <div class="circlef" style="width: 105px; height: 105px;"></div>
+          <p class="small-t">Big tree</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 90px; height: 90px;"></div>
+          <p class="small-t">Medium tree</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 72px; height: 72px;"></div>
+          <p class="small-t">Small Tree</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 56px; height: 56px;"></div>
+          <p class="small-t">Bush</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 40px; height: 40px;"></div>
+          <p class="small-t">Grass</p>
+        </div>
+        <div class="circle-group">
+          <div class="circle" style="width: 24px; height: 24px;"></div>
+          <p class="small-t">Scandent</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="images/Garcinia.png" alt="">
+    </div>
+  </div>
+  <div class="ellipse-divider">
+    <h1 class="white">Learn More!</h1>
+  </div>
+  <div class="green-bg">
+  </div>
+  <div class="dark-g">
+    <div class="cards">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="top-card"><img src="images/cycle.svg" alt="" id="rotate"></div>
+            <div class="mid-card">
+              <h1 class="question">Which flower looks like a beak and lures hummingbirds?</h1>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="img-c">
+              <img src="images/Cards 3.png" alt="Heliconia" />
+            </div>
+            <div class="answer-text">Heliconia—bright, beak-shaped, and a hummingbird favorite!</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="top-card"><img src="images/cycle.svg" alt="" id="rotate"></div>
+            <div class="mid-card">
+              <h1 class="question">What plant feeds birds and gives us chocolate?</h1>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="img-c">
+              <img src="images/Cards 2.png" alt="Heliconia" />
+            </div>
+            <div class="answer-text">Cacao tree—birds eat the fruit, we get chocolate!</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="top-card"><img src="images/cycle.svg" alt="" id="rotate"></div>
+            <div class="mid-card">
+              <h1 class="question">What tree has fruits toucans love and poop out to spread seeds?</h1>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="img-c">
+              <img src="images/Cards 1.png" alt="Heliconia" />
+            </div>
+            <div class="answer-text">Virola—a favorite snack and seed-spreader for toucans!</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="top-card"><img src="images/cycle.svg" alt="" id="rotate"></div>
+            <div class="mid-card">
+              <h1 class="question">Which spiky fruit tree feeds parrots and monkeys alike?</h1>
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="img-c">
+              <img src="images/Cards 4.png" alt="Heliconia" />
+            </div>
+            <div class="answer-text">Annona (like soursop)—soft fruit, hard seeds, bird-approved!</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="learn-more">
+      <div class="left-plants">
+        <img src="images/Left.png" alt="" class="leaf-img">
+      </div>
+      <div class="learn">
+        <h1 class="white fancy-hover">Where to read more</h1>
+        <p class="whitep hover-words">
+          <span>This</span> <span>website’s</span> <span>main</span> <span>source</span> <span>of</span>
+          <span>information</span> <span>is</span> <span>a</span> <span>book</span> <span>titled</span>
+          <span>Neotropical</span> <span>plants</span> <span>that</span> <span>attract</span> <span>birds,</span>
+          <span>published</span> <span>by</span> <span>Mesaestandar</span> <span>in</span> <span>Medellín,</span>
+          <span>Colombia.</span>
+        </p>
+      </div>
+      <div class="right-plants">
+        <img src="images/Right.png" alt="" class="leaf-img2">
+      </div>
+    </div>
+  </div>
+  <div class="ellipse-divider2">
+    <lottie-player id="plantSit" src="plant-sit/plant-sit.json" background="transparent" speed="1" autoplay
+      style="width: 100%; height: 100%; display: block;"></lottie-player>
+  </div>
+  <footer>
+    <h1 id="thanks">Thank you for your curiosity.</h1>
+    <div class="all-info">
+      <div class="footer-info">
+        <p class="white-small">About us</p>
+        <p class="white-small">Book</p>
+        <p class="white-small">Sources</p>
+        <p class="white-small">Join our team</p>
+      </div>
+      <div class="input-area">
+        <h2 class="news">Subscribe to our newsletter</h2>
+        <input type="text" placeholder="What's your email?">
+      </div>
+      <div class="right-leaves">
+        <img src="images/Leaves.png" alt="" id="leavess">
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="index.js">
+  </script>
+
+</body>
+
+</html>
