@@ -1,8 +1,6 @@
 body {
     background-color: oldlace;
     margin: 0;
-  max-width: 1920px;
-  max-height: 1080px;
     overflow-x: hidden;
   padding: 0;
   
@@ -189,8 +187,9 @@ line-height: normal;
 }
 
 .plant-box {
+  min-width: 1679px;
   border-radius: 68px;
-  height: 900px;
+  max-height: 900px;
   border: 3px solid #34722B;
   margin: 100px;
   display: flex;
@@ -206,10 +205,10 @@ line-height: normal;
 }
 
 .plant-info {
-  width: 700px;
+  max-width: 700px;
 }
 .plant-info2 {
-  width: 832px;
+  max-width: 832px;
 }
 .plant-info h1 {
   color: #34722B;
@@ -238,7 +237,7 @@ line-height: normal;
 }
 
 .info2 {
-  width: 700px;
+  max-width: 700px;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
